@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import PasswordInputWithValidation from "./passwordInputWithValidation";
+import OtpInputWithValidation from "./otpInputWithValidation";
+import Announcements from "./announcement";
+import React, { useEffect, useState } from 'react';
 
 function App() {
+  const [isDesktopView, setIsDesktopView] = useState(false);
+
+  useEffect(() => {
+    function checkScreenWidth() {
+      setIsDesktopView(window.innerWidth < 1024); 
+    }
+
+    checkScreenWidth();
+
+    window.addEventListener('resize', checkScreenWidth);
+
+    return () => window.removeEventListener('resize', checkScreenWidth);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* Block view on small device */}
+      {isDesktopView && (
+        <div className="fixed top-0 left-0 w-full h-full bg-black flex items-center justify-center">
+          <p className="text-white text-sm p-4">Please view this content on a desktop device for the best experience.</p>
+        </div>
+      )}
+
+      <Announcements />
+      <section className="flex flex-col items-center justify-center">
+        <OtpInputWithValidation numberOfDigits={6} />
+        <PasswordInputWithValidation />
+      </section>
+    </>
   );
 }
 
