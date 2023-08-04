@@ -19,6 +19,9 @@ This special input box employs real-time validation to ensure the strength and s
 ![react-password-input](https://github.com/TEJA2312/react-advance-inputs/assets/62765495/a41c6bdb-3390-462e-92a7-ed0b1fe3315d)
 
 
+## Tech Stack
+
+React, TailwindCSS
 
 ## 🔗 Links
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tejas2312/)
@@ -26,10 +29,5 @@ This special input box employs real-time validation to ensure the strength and s
 ## Authors
 
 - [@TEJA2312](https://github.com/TEJA2312)
-
-
-## Tech Stack
-
-React, TailwindCSS
 
 
