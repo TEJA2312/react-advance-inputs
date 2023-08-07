@@ -3,6 +3,7 @@ import React, { useRef, useEffect, useState } from 'react';
 const correctOTP = "123456" // fetched from your server
 
 function OtpInputWithValidation({ numberOfDigits }) {
+  
   const [otp, setOtp] = useState(new Array(numberOfDigits).fill(""));
   const [otpError, setOtpError] = useState(null);
   const otpBoxReference = useRef([]);

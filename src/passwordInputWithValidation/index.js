@@ -18,7 +18,6 @@ const PasswordInputWithValidation = () => {
   };
 
   const validatePassword = (password) => {
-
     setErrors({
       minValueValidation: password.length >= 8,
       numberValidation: /\d/.test(password),
@@ -29,10 +28,11 @@ const PasswordInputWithValidation = () => {
 
   return (
     <article className="w-1/2 mt-12 mb-24">
-      {/* Your other content goes here */}
+      <p className="text-2xl font-medium text-white">Password Input With Validation</p>
+      <p className="text-base text-white mt-4 bg-[#323232] p-4 rounded-md">In this Input box as the user types, it checks if the password is strong and secure. It looks for numbers, capital letters, and special characters to ensure a strong password. If the password is too short or missing any of these things, it shows an error message below with a shake animation.</p>
       <p className="text-base text-white mt-6 mb-4">Password</p>
       <input
-        type="password"
+        type="text"
         value={password}
         onChange={handlePasswordChange}
         className={`border w-full text-white p-3 rounded-md mx-auto block bg-black focus:border-2 focus:outline-none`}

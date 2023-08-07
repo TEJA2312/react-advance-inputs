@@ -3,7 +3,7 @@ export default function Announcements({  }) {
  return(
   <div class="bg-[#00b570] p-4 text-white">
     <div className="flex items-center gap-4 justify-center">
-      <p className="text-center text-sm font-medium">If this project helped you in anyway ? Give us a star on Github</p> 
+      <p className="text-center text-sm font-medium">If this project helped you in anyway ? Give a star on Github</p> 
       <svg className="hover:scale-[1.04] cursor-pointer"
         xmlns="http://www.w3.org/2000/svg"
         width="24"
