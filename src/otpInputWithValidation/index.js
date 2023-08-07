@@ -27,7 +27,7 @@ function OtpInputWithValidation({ numberOfDigits }) {
   }
 
   useEffect(() => { 
-    if( otp.join("") !== "" && otp.join("") !== correctOTP){
+    if(otp.join("") !== "" && otp.join("") !== correctOTP){
       setOtpError("❌ Wrong OTP Please Check Again")
     }else{
       setOtpError(null)
