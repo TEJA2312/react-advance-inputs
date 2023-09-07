@@ -1,7 +1,7 @@
 
-# React Attractive Inputs
+# React Advanced Inputs
 
-Two production ready advance input code that you can use as reference or copy as it is in your next project.
+Two production-ready advance input codes that you can use as reference or copy as it is in your next project.
 
 
 
